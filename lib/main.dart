@@ -76,9 +76,8 @@ class _QuizPageState extends State<QuizPage> {
                   print('Oops, you guessed wrong');
                 }
                 setState(() {
-                  questionNumber++;
+                  quizBrain.nextQuestion();
                 });
-                print(questionNumber);
               },
             ),
           ),
